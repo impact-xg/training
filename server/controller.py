@@ -27,7 +27,7 @@ def start(session_id,speed):
 
     # Build the command strings
     ffmpeg_cmd = [
-        "ffmpeg", "-f", "mpegts", "-timeout", "5000000", "-i", "rtp://0.0.0.0:8000",
+        "ffmpeg", "-f", "mpegts", "-timeout", "5000000", "-i", "rtp://localhost:8000",
         "-c", "copy", video_file
     ]
 
