@@ -29,3 +29,9 @@ sudo usermod -aG wireshark $USER
 
 Logout and login again
 
+When the session is completed, exectue
+
+
+```
+python3 extract_stats.py
+```

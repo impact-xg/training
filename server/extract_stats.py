@@ -7,8 +7,8 @@ import json
 
 for s in ["0","20","50"]:
     # Define the base directory
-    base_dir = "/home/ubuntu/training/output{s}"
-    reference_video = "/home/ubuntu/training/input/webcam-10sec-{s}kmh-1.mp4"
+    base_dir = "/home/ubuntu/training/server/output{s}"
+    reference_video = "/home/ubuntu/training/client/input/webcam-10sec-{s}kmh-1.mp4"
     ffmpeg_path =  "/home/ubuntu/bin/ffmpeg"
 
     index=0
