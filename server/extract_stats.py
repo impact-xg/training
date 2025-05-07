@@ -10,7 +10,7 @@ for s in ["0","20","50"]:
     base_dir = "/home/ubuntu/training/server/output{s}"
     reference_video = "/home/ubuntu/training/client/input/webcam-10sec-{s}kmh-1.mp4"
     ffmpeg_path =  "/home/ubuntu/bin/ffmpeg"
-
+    print("Extracting stats from:", base_dir)
     index=0
     timestamp=0
     # Walk through each folder in the base directory
