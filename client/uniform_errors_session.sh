@@ -19,7 +19,7 @@ for s in 0 20 50; do
 
       # Stream video via ffmpeg
       ~/bin/ffmpeg -re \
-        -i ~${INPUT_PATH}/webcam-10sec-${s}kmh-1.mp4 \
+        -i ${INPUT_PATH}/webcam-10sec-${s}kmh-1.mp4 \
         -input_format mjpeg \
         -c copy \
         -f rtp_mpegts "rtp://${SERVER_RTP}?pkt_size=1316"

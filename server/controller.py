@@ -8,6 +8,7 @@ app = Flask(__name__)
 processes = {}
 
 OUTPUT_DIR_BASE = os.path.expanduser("/home/ubuntu/training/server/output")
+INTERFACE = "ens3"
 
 @app.route('/start/<string:session_id>/<string:speed>', methods=['GET'])
 def start(session_id,speed):
@@ -31,7 +32,7 @@ def start(session_id,speed):
     ]
 
     tshark_cmd = [
-        "tshark", "-i", "enp3s0", "-f", "udp port 8000",
+        "tshark", "-i", INTERFACE, "-f", "udp port 8000",
         "-w", pcap_file
     ]
 
