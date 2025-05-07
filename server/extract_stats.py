@@ -94,7 +94,7 @@ for s in ["0","20","50"]:
                     trace_data["QoE"] = vmaf_score
                     trace_data["timestamp"] = timestamp
                     filename = folder_name + ".json"
-                    output_file = base_dir /  filename
+                    output_file = base_dir + "/" +   filename
                     with open(output_file, "w") as f:
                         json.dump(trace_data, f, indent=4)
                     index=index+1
