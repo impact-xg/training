@@ -43,7 +43,7 @@ for s in ["0","20","50"]:
                     # Run the command and capture the output
                     result = subprocess.run(cmd, capture_output=True, text=True)
                     output = result.stdout
-                    print(output)
+                    #print(output)
                     lines = output.split("\n")
                     words = lines[12].split(" ")
                     filtered_arr = [s for s in words if s.strip()]
