@@ -2,7 +2,7 @@
 
 SERVER_ADDRESS="192.168.154.10:8080"
 SERVER_RTP="192.168.154.10:8000"
-INPUT_PATH="/home/ubuntu/training/input"
+INPUT_PATH="/home/ubuntu/training/client/input"
 
 for s in 0 20 50; do
   for y in 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0; do
