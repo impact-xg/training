@@ -8,3 +8,23 @@ to the videos used as input. Line 12 should point to the ffmpeg folder (built fr
 first address is the address in which the controller scripts listens and the second is
 the address in which ffmpeg expects packets
 * In the client folder edit script files line 5 to include the correct folder
+* Install the server dependencies
+```
+python3 -m pip install flask
+```
+
+## Execution
+In the server side go to the `training\server` folder and execute
+
+```
+python3 controller.py
+```
+
+If you receive this error `tshark: Couldn't run /usr/bin/dumpcap in child process: Permission denied` execute following
+
+```
+sudo usermod -aG wireshark $USER
+```
+
+Logout and login again
+
