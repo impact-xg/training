@@ -45,6 +45,8 @@ for s in ["0","20","50"]:
                     output = result.stdout
                     #print(output)
                     lines = output.split("\n")
+                    words = lines[4].split(" ")
+                    interval= float(words[2])
                     words = lines[12].split(" ")
                     filtered_arr = [s for s in words if s.strip()]
                     bytes = int(filtered_arr[7])*8/1000
@@ -57,9 +59,9 @@ for s in ["0","20","50"]:
                     mean = float(filtered_arr[16])
                     formatted_mean = "{:.3f}".format(mean)
                     speed = s #get_speed()
-                    print(round(bytes/2, 1), "\t\t", plost, loss, "\t", formatted_mean, "\t\t", speed)
+                    print(round(bytes/interval, 1), "\t\t", plost, loss, "\t", formatted_mean, "\t\t", speed)
                     measurement = {}
-                    measurement["throughput"] = round(bytes/2, 1)
+                    measurement["throughput"] = round(bytes/interval, 1)
                     measurement["packets_lost"] = float(plost)
                     measurement["packet_loss_rate"] = loss
                     measurement["jitter"] = float(formatted_mean)
