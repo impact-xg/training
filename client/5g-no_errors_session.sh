@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SERVER_ADDRESS="192.168.154.10:8080"
-SERVER_RTP="192.168.154.10:8000"
+SERVER_ADDRESS="195.251.234.25:8080"
+SERVER_RTP="195.251.234.25:8000"
 INPUT_PATH="/home/ubuntu/training/client/input"
 
 for s in 0 20 50; do
