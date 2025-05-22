@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVER_ADDRESS="195.251.234.25:8080"
+SERVER_ADDRESS="195.251.234.25:8554"
 SERVER_RTP="195.251.234.25:8000"
 INPUT_PATH="/home/ubuntu/training/client/input"
 
