@@ -11,7 +11,7 @@ for s in 0 20 50; do
       echo "...Starting repetition $i with SESSIONID: $SESSIONID"
 
       # Start session
-      curl "http://$SERVER_ADDRESS/start/$SESSIONID/20"
+      curl "http://$SERVER_ADDRESS/start/$SESSIONID/$s"
       sleep 2
 
       # Stream video via ffmpeg
